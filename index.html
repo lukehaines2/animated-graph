@@ -20,6 +20,7 @@
     text-align: center;
     color: #fff;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
   }
 
   .bar:hover {
@@ -35,25 +36,25 @@
     transform: scale(1.2);
   }
 
-  .bar#first {
+  .bar.first {
     height: 50%;
     animation: graph-1 1.5s 1;
     background: #f44336;
   }
 
-  .bar#second {
+  .bar.second {
     height: 60%;
     animation: graph-2 1.5s 1;
     background: #59bbdb;
   }
 
-  .bar#third {
+  .bar.third {
     height: 70%;
     animation: graph-3 1.5s 1;
     background: purple;
   }
 
-  .bar#fourth {
+  .bar.fourth {
     height: 80%;
     animation: graph-4 1.5s 1;
     background: greenyellow;
@@ -117,8 +118,8 @@
 </style>
 
 <div class="chart-container">
-  <div class="bar" id="first"><i class="material-icons">person</i></div>
-  <div class="bar" id="second"><i class="material-icons">dvr</i></div>
-  <div class="bar" id="third"><i class="material-icons">ondemand_video</i></div>
-  <div class="bar" id="fourth"><i class="material-icons">question_answer</i></div>
+  <cc-open-module id="100110" class="bar first" data-bar="1"><i class="material-icons">person</i></cc-open-module>
+  <cc-open-module id="100110" class="bar second" data-bar="2"><i class="material-icons">dvr</i></cc-open-module>
+  <cc-open-module id="100110" class="bar third" data-bar="3"><i class="material-icons">ondemand_video</i></cc-open-module>
+  <cc-open-module id="100110" class="bar fourth" data-bar="4"><i class="material-icons">question_answer</i></cc-open-module>
 </div>
