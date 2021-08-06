@@ -24,22 +24,82 @@
 
   .bar#first {
     height: 50%;
+    animation: graph-1 1.5s 1;
   }
 
   .bar#second {
     height: 60%;
+    animation: graph-2 1.5s 1;
   }
 
   .bar#third {
     height: 70%;
+    animation: graph-3 1.5s 1;
   }
 
   .bar#fourth {
     height: 80%;
+    animation: graph-4 1.5s 1;
   }
 
   .bar i {
     font-size: 2rem;
+  }
+
+  /* animations */
+  @keyframes graph-1 {
+    0% {
+      height: 0%;
+      top: 100%;
+      opacity: 0.5;
+    }
+
+    100% {
+      height: 50%;
+      opcatiy: 1;
+    }
+  }
+
+  /* animations */
+  @keyframes graph-2 {
+    0% {
+      height: 0%;
+      top: 100%;
+      opacity: 0.5;
+    }
+
+    100% {
+      height: 60%;
+      opcatiy: 1;
+    }
+  }
+
+  /* animations */
+  @keyframes graph-3 {
+    0% {
+      height: 0%;
+      top: 100%;
+      opacity: 0.5;
+    }
+
+    100% {
+      height: 70%;
+      opcatiy: 1;
+    }
+  }
+
+  /* animations */
+  @keyframes graph-4 {
+    0% {
+      height: 0%;
+      top: 100%;
+      opacity: 0.5;
+    }
+
+    100% {
+      height: 80%;
+      opcatiy: 1;
+    }
   }
 </style>
 
