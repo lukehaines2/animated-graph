@@ -4,11 +4,12 @@
   }
 
   .chart-container {
+    height: 50vh;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     flex-direction: row;
-    height: 50vh;
+    gap: 5%;
     margin-top: 25vh;
     border: 1px solid red;
   }
@@ -16,6 +17,9 @@
   .bar {
     background: red;
     width: var(--bar-width);
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
   }
 
   .bar#first {
@@ -33,11 +37,15 @@
   .bar#fourth {
     height: 80%;
   }
+
+  .bar i {
+    font-size: 2rem;
+  }
 </style>
 
 <div class="chart-container">
-  <div class="bar" id="first"><i class="material-icons">play_circle_outline</i></div>
-  <div class="bar" id="second"></div>
-  <div class="bar" id="third"></div>
-  <div class="bar" id="fourth"></div>
+  <div class="bar" id="first"><i class="material-icons">person</i></div>
+  <div class="bar" id="second"><i class="material-icons">dvr</i></div>
+  <div class="bar" id="third"><i class="material-icons">ondemand_video</i></div>
+  <div class="bar" id="fourth"><i class="material-icons">question_answer</i></div>
 </div>
