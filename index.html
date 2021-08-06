@@ -1,0 +1,43 @@
+<style>
+  :root {
+    --bar-width: 150px;
+  }
+
+  .chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 50vh;
+    margin-top: 25vh;
+    border: 1px solid red;
+  }
+
+  .bar {
+    background: red;
+    width: var(--bar-width);
+  }
+
+  .bar#first {
+    height: 50%;
+  }
+
+  .bar#second {
+    height: 60%;
+  }
+
+  .bar#third {
+    height: 70%;
+  }
+
+  .bar#fourth {
+    height: 80%;
+  }
+</style>
+
+<div class="chart-container">
+  <div class="bar" id="first"><i class="material-icons">play_circle_outline</i></div>
+  <div class="bar" id="second"></div>
+  <div class="bar" id="third"></div>
+  <div class="bar" id="fourth"></div>
+</div>
